@@ -42,3 +42,6 @@ No terminal restante dos terminais roda os seguintes comandos:
 cd subscriber
 go run .
 ```
+
+# Funcionamento comprovado
+Segue o [link do projeto](https://drive.google.com/file/d/19Xb20oNHNnaYbpXYjZWyF1yJ1bFiQNjs/view?usp=sharing) rodando corretamente
