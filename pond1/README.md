@@ -17,7 +17,7 @@ Vai ser necesário abrir 3 terminais dentro do peojeto. Caso necesário use esse
 cd ambiente_clonado/Modulo9/pond1
 ```
 
-Nos 3 terminais roda o seguinte comando para acessar o binário do go roda o seguinte comando:
+Nos 3 terminais roda o seguinte comando para acessar o binário do go:
 
 ```
 source .bashrc
