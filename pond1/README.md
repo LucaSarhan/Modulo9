@@ -6,6 +6,11 @@ Para simular o dispositivo IoT, optou-se pelo [Sensor de Radiação Solar](https
 # Execução do projeto
 É necesário clonar o projeto e entrar na ambiente usando os segunites comandos:
 
+```
+https://github.com/LucaSarhan/Modulo9.git
+cd ambiente_clonado/Modulo9/pond1
+```
+
 Vai ser necesário abrir 3 terminais
 
 Nos 3 terminais roda o seguinte comando para acessar o binário do go roda o seguinte comando:
