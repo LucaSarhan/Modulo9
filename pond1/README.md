@@ -11,7 +11,11 @@ https://github.com/LucaSarhan/Modulo9.git
 cd ambiente_clonado/Modulo9/pond1
 ```
 
-Vai ser necesário abrir 3 terminais
+Vai ser necesário abrir 3 terminais dentro do peojeto. Caso necesário use esse comando para entrar no local nos terminais novos:
+
+```
+cd ambiente_clonado/Modulo9/pond1
+```
 
 Nos 3 terminais roda o seguinte comando para acessar o binário do go roda o seguinte comando:
 
