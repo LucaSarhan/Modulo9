@@ -10,7 +10,7 @@ func SolarRadiation() string {
 	
 	quantification := rand.Intn(1281)
 
-	frequency_rate := 1.0 / 31250.0 * 1e9
+	frequency_rate := 60.0 * 1e9
 
 	time.Sleep(time.Duration(frequency_rate))
 

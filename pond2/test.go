@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"math"
 	"math/rand"
 	"testing"
@@ -44,14 +45,19 @@ func testPublisher(t *testing.T, measurement uint16) {
 	token.Wait()
 	
 	t.Logf("Published: %d", measurement)
-}
 
-var messagePubHandler MQTT.MessageHandler = func(client MQTT.Client, msg MQTT.Message) {
-	var t *testing.T
-	t.Logf("Received: %s\n", msg.Payload())
+	time.Sleep(2 * time.Second)
 }
 
 func testSubscriber(t *testing.T, measurement uint16) {
+	var messagePubHandler MQTT.MessageHandler = func(client MQTT.Client, msg MQTT.Message) {
+		t.Logf("Received: %s\n", msg.Payload())
+
+		if fmt.Sprint(-2000) != fmt.Sprint(measurement) {
+			t.Errorf("Received: %s, expected: %d", msg.Payload(), measurement)
+		}
+	}
+	
 	opts := MQTT.NewClientOptions().AddBroker("tcp://localhost:1891")
 	opts.SetClientID("go_test_subscriber")
 	opts.SetDefaultPublishHandler(messagePubHandler)
@@ -63,8 +69,11 @@ func testSubscriber(t *testing.T, measurement uint16) {
 
 	if token := client.Subscribe("test/topic", 1, nil); token.Wait() && token.Error() != nil {
 		t.Error(token.Error())
-		return
 	}
+
+	time.Sleep(2 * time.Second)
+
+	t.Error("Test failed")
 }
 
 func TestIotsim(t *testing.T) {
