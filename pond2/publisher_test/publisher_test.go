@@ -5,11 +5,12 @@ import (
 	"math/rand"
 	"testing"
 	"time"
+	"fmt"
 
 	MQTT "github.com/eclipse/paho.mqtt.golang"
 )
 
-func testSensor(t *testing.T) uint16 {
+func testSensor(t *testing.T) string {
 	startTime := time.Now()
 	
 	measurement := rand.Intn(1281)
@@ -30,10 +31,10 @@ func testSensor(t *testing.T) uint16 {
 		t.Errorf("Solar Radiation Sensor took %f seconds to execute, expected %f seconds", elapsed_time, expected_time)
 	}
 
-	return uint16(measurement)
+	return fmt.Sprint(measurement)
 }
 
-func testPublisher(t *testing.T, measurement uint16) {
+func testPublisher(t *testing.T, measurement string) {
 	opts := MQTT.NewClientOptions().AddBroker("tcp://localhost:1891")
 	opts.SetClientID("go_test_publisher")
 
@@ -45,7 +46,7 @@ func testPublisher(t *testing.T, measurement uint16) {
 	token := client.Publish("test/topic", 0, false, measurement)
 	token.Wait()
 	
-	t.Logf("Published: %d", measurement)
+	t.Log("Published: ", measurement)
 }
 
 func TestPond(t *testing.T) {
