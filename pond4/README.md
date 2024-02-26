@@ -1,5 +1,13 @@
 # Ponderada 4
-A ponderada 4 é sobre o HiveMQ. Essa ponderada mudou o broker utilizado do mosquitto, um broker local, para o HiveMQ, um broker na web. Para connectar ao HiveMq foi necessário criar um cluster que permite publicar e subscrever ao mesmo. 
+A ponderada 4 é sobre o HiveMQ. Essa ponderada mudou o broker utilizado do mosquitto, um broker local, para o HiveMQ, um broker na web e adciona uma camada de autenticação TLS. Para connectar ao HiveMq foi necessário criar um cluster que permite publicar e subscrever ao mesmo. 
+
+# Configuração do ambiente
+
+Vai ser necessário inserir suas credenciais do cluster no codigo. Para isso vai ser necessário cria 2 arquivos .env um na pasta publisher e outro no subscriber. Em ambos vai ser necessário colocar suas credencias da seguinte forma:
+
+BROKER_ADDR = "seu_address_do_cluster"
+HIVE_USER = "<nome-de-usuario>"
+HIVE_PSWD = "<senha-cadastrada>"
 
 # Execução do Projeto
 
