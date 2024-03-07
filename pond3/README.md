@@ -38,7 +38,7 @@ Tente simular uma violação do pilar de Confidencialidade.
 
 **Resposta:** 
 
-O video no link abaixo demonstra uma conexão bem sucedida com um broker remoto usando um web client logo depois outra coneão é feito nesse mesmo broker remoto com outro web client porém a primeira conexão foi desconectado. Esse tipo de priorização de conexão para o mais recente viola o pilar de confidencialidade porque permite que usuarios não autorizados vejam a informação confidencial.
+O video no link abaixo demonstra uma conexão bem sucedida com um broker remoto usando um web client logo depois outra coneão é feito nesse mesmo broker remoto com outro web client porém a primeira conexão foi desconectado. Esse tipo de priorização de conexão para o mais recente viola o pilar de confidencialidade porque permite que usuarios não autorizados vejam a informação confidencial.e
 
 **Pergunta:**
 

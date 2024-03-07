@@ -23,7 +23,7 @@ cd ambiente_clonado/Modulo9/pond4
 Vai ser necessário abrir 2 terminais dentro do peojeto. Caso necessário use esse comando para entrar no local nos terminais novos:
 
 ```
-cd ambiente_clonado/Modulo9/pond3
+cd ambiente_clonado/Modulo9/pond4
 ```
 
 Nos 2 terminais roda o seguinte comando para acessar o binário do go:
