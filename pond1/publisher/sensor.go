@@ -12,6 +12,8 @@ func SolarRadiation() string {
 
 	frequency_rate := 60.0 * 1e9
 
+	firing_rate = firing_rate / 60.0
+
 	time.Sleep(time.Duration(frequency_rate))
 
 	text := fmt.Sprintf("Medição Radiação Solar: %d W/m2", quantification)
