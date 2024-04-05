@@ -1,0 +1,1 @@
+# Ponderada 7 - desafio de 1 bilhão de linhas
