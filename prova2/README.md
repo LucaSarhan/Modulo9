@@ -46,3 +46,7 @@ cd subscriber
 ```
 go run .
 ```
+
+# link do video comprovando o funcionamento
+
+[link](https://drive.google.com/file/d/1SXpLUtMXSKlQvADhVe01ZJNky1B8uLPI/view?usp=sharing)
