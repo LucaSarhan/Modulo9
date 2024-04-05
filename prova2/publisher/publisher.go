@@ -39,7 +39,7 @@ func main() {
 
 	for {
 		text := Sensor("SolarRadiation")
-		token := client.Publish("qualideAr", 0, false, text)
+		token := client.Publish("qualidadeAr", 0, false, text)
 		token.Wait()
 		fmt.Println("Published: ", text)
 		time.Sleep(2 * time.Second)
