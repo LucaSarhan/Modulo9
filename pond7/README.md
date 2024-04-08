@@ -1,6 +1,6 @@
 # Ponderada 7 - desafio de 1 bilhão de linhas
 
-# Creating the measurements file with 1B rows
+# Criando o arquivo com 1B delinhas
 
 Primeiro instale os requirements:
 ```
